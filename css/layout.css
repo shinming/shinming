@@ -1,0 +1,515 @@
+@import url("reset.css");
+
+*{margin:0;padding:0;}
+
+html,body{
+	width:100%;
+	height:100%;
+	position:relative;
+	background-color:#EEE;
+}
+
+a{ 
+	text-decoration:none;
+}
+
+a:link {
+	color:#30b1bc;
+	text-decoration: none;
+}
+
+a:visited, a:active {
+	color:#30b1bc;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: none;
+	/* border-bottom:1px dotted; */
+}
+
+img {
+	border:0;	
+}
+
+img{float:left; width:100%; height:auto; margin:0px 10px 0px 0;}
+#section4 img, #section6 img{ margin-bottom:10px;}
+h2{ font-family:'Helvetica Neue' , Arial, Helvetica, sans-serif; color:#fff; font-size:40px; letter-spacing: 2px;}
+h3{font-family:'Helvetica Neue' , Arial, Helvetica, sans-serif; /*font-size:90%; font-weight:lighter;*/}
+h4{ font:300 20px 'Helvetica Neue', Helvetica, Arial, sans-serif; line-height:160%; letter-spacing:0.15em; color:#fff; }
+p{ font:300 16px 'Lucida Grande', Tahoma, Verdana, sans-serif; color:#fff; line-height:160%; letter-spacing:0.08em;/**/ }
+
+#section1 h2{ padding:30px 0 15px 0; text-align:center; letter-spacing: 1px;}
+#section2 h2{ padding:0px 0 15px 0; text-align:center; letter-spacing: 1px; }
+#section3 h2{ padding:0px 0 15px 0; text-align:center; letter-spacing: 1px;} 
+#section5 h2{ padding:0px 0 15px 0; text-align:center; letter-spacing: 1px; color:#e52a79;}
+
+#section1 p{ color:#dbefc6}
+#section2 p{ color:#ffccab}
+#section3 p{ color:#cdeaf7;}
+#section5 p{ color:#600}
+.text_box p{ text-align:center; font-size:16px;}
+
+#top_wrapper {
+	width:100%;
+	background:#eee;
+	z-index:200;
+	position:fixed;
+	position:fixed !important;
+    /*bottom: 0;*/
+	top:0px; 
+}
+
+#top {
+	width:100%;
+	margin:0 auto;
+}
+
+#menu {
+	float:left;
+	width:100%;
+	font-size:14px;
+	text-transform:uppercase;
+	/*letter-spacing:1px;*/
+}
+
+#menu a{		
+	color:#555;
+	text-decoration: none;
+	display:block; 
+	width:100%; height:44px;	
+	text-indent: -9999px;	
+}
+
+#menu a:hover{
+	color:#555;
+	text-decoration: none; 
+	color:pink;
+}
+
+#menu ul li{
+	float:left;
+	padding:0 0 0 0;
+	margin:0 0 0 0;
+	width:25%;
+	text-align:center;	
+}
+#menu ul li.menu1 a{background:url('../images/icon_1.svg') no-repeat 40% 20% #88C941;}
+#menu ul li.menu2 a{background:url('../images/icon_2.svg')  no-repeat 40% 20% #f08743;}
+#menu ul li.menu3 a{background:url('../images/icon_3.svg')  no-repeat 40% 20% #5ab9e3;}
+#menu ul li.menu4 a{background:url('../images/icon_4.svg')  no-repeat 40% 20% #fbd5d4;}
+
+.content{ width:80%; margin:0 auto;}
+.content p{ text-align:center;}
+.content_95{ width:95%; margin:0 auto;}
+
+#section1 h4{ clear:both; color:#FFF; /*font-size:120%;*/ text-align:center; margin:0px 0 20px 0;}
+#section4 h4{ color:#333; /*font-size:120%;*/ text-align:center; margin:0px 0 0px 0;}
+.content_95 img{ /**/max-width:766px; /*margin:0 auto; text-align:center;*/}
+.works_sub h3{text-align:center;}
+.works_sub p{ text-align:center;}
+
+a.link_cross{ clear:both; background:url('../images/close.svg'); width:40px; height:40px; display:block; margin:0 auto; margin-top:20px; margin-bottom:20px;}
+
+
+#section1 {
+	background:#88C941;
+  	position: relative;
+    width:100%;  
+	display: block;
+  	overflow: hidden;
+}
+/*
+#section1 img.iphone{ display:none; }
+#section1 img.mac{ display:none; }
+#section1 img.ipad{ display:none; }
+*/
+#section2 {
+	/*background:#999;*/
+	background: #f08743;
+  	position: relative;
+    width:100%;  
+	display: block;
+	height:auto;
+	color:#fff;
+  	overflow: hidden;
+	padding-bottom:30px;
+	padding-top:30px;				
+}
+#section2 .details{ margin:20% 5%; text-align:center;  /*background:pink*/}	
+#section2 .details p{ color:#CCC}	
+
+#section3 {
+	background:#5ab9e3;
+  	position: relative;
+    width:100%;  
+	display: block;
+  	overflow: hidden;	
+	padding-bottom:30px;
+	padding-top:30px;
+}
+#section3 .interest img{border-radius:1800px;box-shadow : 0 0 0px 8px #0aaaba;}
+
+#section4 {
+	background:#FFF;
+  	position: relative;
+    width:100%;  
+	display: block;/*先不用隱藏*/
+  	color: #000;
+  	overflow: hidden;
+}
+#section4 p{ color:#666;}
+
+#section5 {
+	background: #fbd5d4;
+  	position: relative;
+    width:100%;  
+	display: block;
+  	color: #000;
+  	/*margin-bottom:80px;*/
+  	overflow: hidden;
+	/*padding-bottom:30px;
+  	padding-top:30px;*/	
+}
+
+#section6 {
+	background:#fff;
+  	position: relative;
+    width:100%;  
+	display:block;/*先不用隱藏*/  	
+  	overflow: hidden;
+}
+#section6 p{color: #666;}
+
+
+
+
+#section5 .photo{float:left ; width:48%;margin-right:2%; min-width:54px; /*background:#fff;*/ margin-top:50px;}
+#section5 .shin_ming{float:left ; width:50%;/*background:#993; */ margin-top:50px;}
+#section5 .shin_ming h2{ color:#e52a79; font-size:300%; text-align:left; padding:0px; margin:0px;letter-spacing: -2px; /*background:#9C9*/}
+#section5 .shin_ming h3{ color:#600; text-align:left; /*text-align:center;*/  font-size:150%; padding:0px; margin:0px; margin-top:5%;letter-spacing: 0px;/* background:#CF9;*/ }
+#section5 .introduction{/*clear:both;margin-left:2%;*/float:left ;  width:100%; padding:4% 0 4% 0;  /*background:gray;*/}
+#section5 .introduction p{ /*text-align:justify;text-align:center;*/ text-align: left;}
+#section5 .skill{float:left ; /*margin:0 auto;*/ width:100%; min-width:180px; padding:4% 0 4% 0; /*background:#69F*/}
+.skill li{/*font-size:150%;*/ line-height:40px; }
+ul.skill_1 li{ float:left;}
+ul.skill_2 {padding-left:50px; margin:0 20px 5px 5px; }
+ul.skill_2:first-child{ margin-left:0px;}
+ul.skill_2 li{ margin:0 0.5% 0 0;}
+
+#skill_ps{background:url('../images/skill_ps.svg') no-repeat;width:100%; height:40px;}
+#skill_ps li{ color:#06C;}
+#skill_ai{background:url('../images/skill_ai.svg') no-repeat;width:100%; height:40px;}
+#skill_ai li{ color:#F60;}
+#skill_flash{background:url('../images/skill_flash.svg') no-repeat;width:100%; height:40px;}
+#skill_flash li{ color:#900;}
+#skill_html{background:url('../images/skill_html.svg') no-repeat;width:100%; height:40px;}
+#skill_html li{ color:#093;}
+#skill_css{background:url('../images/skill_css.svg') no-repeat;width:100%; height:40px;}
+#skill_css li{ color:#C06;}
+#skill_jq{background:url('../images/skill_jq.svg') no-repeat;width:100%; height:40px;}
+#skill_jq li{ color:#006;}
+
+#skill_ps li.gray, #skill_ai li.gray,#skill_flash li.gray, #skill_html li.gray, #skill_css li.gray, #skill_jq li.gray{color:#fff; /*font-size:90%;*/}
+
+.skill h3{ float: left; margin: 0 10px 10px 0; border: 10px; padding:5px 10px 5px 10px;  display: block; border-radius: 10px; border: 1px red solid;}
+
+
+/*****
+*
+*行動版面:355px以下 (最小的phone) 
+*
+*****/
+.mosaic-block {	
+	position:relative;
+	float:left;	
+	margin:1.2%; 
+	width:100%;
+	margin-bottom:15px;
+
+}
+.mosaic-block .mosaic-backdrop {
+	float:left;
+	top:0;		
+	width:50%;
+	height:auto;
+	background:#111;
+	margin-left:25%;
+	box-shadow:8px 8px 5px #d36b28;
+	cursor: pointer;
+}
+.mosaic-block .mosaic-backdrop img{
+	float:left; 
+	width:100%;
+	height:auto; 
+	margin:0px 0px 0px 0;
+}	
+.mosaic-block .mosaic-overlay {
+	z-index:5;
+	position:absolute;
+	width:50%;
+	height:100%;
+	margin-left:25%;
+}
+	/*** Custom Animation Styles (You can remove/add any styles below) ***/		
+	.fade .mosaic-overlay {
+		opacity:0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+		filter:alpha(opacity=00);
+		background:url(../images/bg-black.png);/*半透明黑覆蓋*/
+	}
+	/*** End Animation Styles ***/
+
+#section1 .interest{
+	position:relative;
+	float:left;	
+	margin:0; 
+	width:100%;
+	margin-bottom:0px; 
+	/*background:#111;*/}
+#section1 .interest img{
+	float:left;
+	top:0;		
+	width:50%;
+	margin-left:25%;
+	height:auto;
+	/*background:#111;*/
+	}
+
+#section3 .interest{
+	position:relative;
+	float:left;	
+	margin:0; 
+	width:100%;
+	margin-bottom:20%;
+	/*background:#111;*/ }
+#section3 .interest img{
+	float:left;
+	top:0;		
+	width:40%;
+	height:auto;
+	margin-left:30%;
+	/*background:#111;*/
+	margin-bottom:5%;
+	}
+#section3 .interest img{background:#fff;/**/}
+#section3 .interest img:hover{background:#fff;}	
+#section3 .interest h4{ clear:both; text-align:center;}	
+#section3 .interest p{ clear:both; width:70%; margin:0 auto; text-align:center; /*background:pink*/}
+#section3 .interest{ color:#66F}
+.text_box p{ padding-bottom:30px;margin:0 auto; line-height:22px;}
+#section3 .interest p{padding-bottom:20px;}
+
+.sub{clear:both; width:100%; margin:0 auto; display:none;/*background:yellow;*/}
+#services_info{ /*background:red;*/ position:relative; float:left;  width:100%;}
+.services_blurb{ float:left; width:100%; margin:1.2%;}
+.works_sub{clear:both; width:100%; margin:0 auto; display:none;/*background:yellow;*/}
+.skill_1{ margin-left:15%;}
+
+/*****
+*
+*行動版面: 355px  到 480px。樣式繼承自: 行動版面_小。(一般的phone) 
+*
+*****/
+@media only screen and (min-width: 355px) {
+.mosaic-block {	
+	position:relative;
+	float:left;	
+	margin:1.2%; 
+	width:100%;
+	margin-bottom:15px; 
+	/*
+	margin:1.6%; 
+	width:45%; 
+	*/
+}
+.mosaic-block .mosaic-backdrop {
+	float:left;
+	top:0;		
+	width:50%;
+	height:auto;
+	background:#111;
+	margin-left:25%;
+}
+.mosaic-block .mosaic-backdrop img{
+	float:left; 
+	width:100%;
+	height:auto; 
+	margin:0px 0px 0px 0;
+}	
+.mosaic-block .mosaic-overlay {
+	z-index:5;
+	position:absolute;
+	width:50%;
+	height:100%;
+	margin-left:25%;
+	/*background:#111;*/
+}
+	/*** Custom Animation Styles (You can remove/add any styles below) ***/		
+	.fade .mosaic-overlay {
+		opacity:0;
+		-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=00)";
+		filter:alpha(opacity=00);
+		background:url(../images/bg-black.png);/*半透明黑覆蓋*/
+	}
+	/*** End Animation Styles ***/	
+
+#section1 .interest{width:100%;}	
+#section1 .interest img{width:40%; margin-left:30%;}	
+#section3 .interest{ width:100%;  /*margin:4%; margin-bottom:0%;*/ /*background:#111;*/}
+#section3 .interest img{ width:40%; height:auto; margin-left:30%;}
+#section3 .interest img{background:#fff;}
+#section3 .interest img:hover{background:#fff;}
+
+#section5 .photo{float:left ; width:20%;margin-right:2%; min-width:54px; /*background:#fff;*/}
+#section5 .shin_ming{float:left ; width:78%;/*background:#993; */}
+#section5 .shin_ming h2{/*color:#333;*/ font-size:300%; text-align:left; padding:0px; margin:0px;letter-spacing: -3px; /*background:#9C9*/}
+#section5 .shin_ming h3{text-align:left;  font-size:180%; padding:0px; margin:0px; margin-top:0%;letter-spacing: 0px; /*background:#CF9;*/ }
+
+.skill_1{ margin-left:0%;}
+
+}
+
+/*****
+*
+*表格版面: 481px 到 768px。樣式繼承自: 行動版面。 (pad) 
+*
+*****/
+@media only screen and (min-width: 581px) {
+	
+#top {
+	width:80%;
+	margin:0 auto;
+}
+	
+#top_wrapper { background:#fff;
+/**/	
+-webkit-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+-moz-box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+
+}
+.mosaic-block {margin:1.5%; width:45%; /*box-shadow: 5px 5px 1px #f5931b;*/ }
+.mosaic-block:hover{ box-shadow: none;}
+.mosaic-block .mosaic-backdrop {width:100%;margin-left:0%;}
+.mosaic-block .mosaic-overlay {width:100%;margin-left:0%;}
+
+.services_blurb{margin:1.6%; width:45%; }
+
+#menu a{		
+	color:#555;
+	text-decoration: none;
+	display:block; 
+	width:auto; height:100px;
+	line-height:100px;	
+	text-indent:0px;
+	/*background:none;*/
+}
+
+#menu a:hover{/*border-bottom: 2px solid #555;*/}
+#menu ul li{
+	/*background:#ccc;*/
+	float:left;
+	padding:0 10px 0 10px;
+	margin:0 0 0 0;
+	width:auto;
+	text-align:center;
+}	
+#menu ul li.menu1 a{background:none;color:#090;}
+#menu ul li.menu2 a{background:none;color:#f08743;}
+#menu ul li.menu3 a{background:none;color:#10a7bc;}
+#menu ul li.menu4 a{background:none;color:#e52a79;}
+.hitcolor{ background:#fff;}
+
+#menu{
+	text-align:center;
+	background:#fff;
+	position:relative;/**/
+}	
+
+.arrow_on{	
+	border-width:8px;
+	border-style:solid;
+	border-color:#fff;
+	position:absolute;/**/
+	bottom:-8px;
+	margin-left:4%;	
+	z-index:-10;
+	
+	transform: rotate(45deg);	
+	-ms-transform: rotate(45deg); /* IE 9 */
+	-webkit-transform: rotate(45deg); /* Safari and Chrome */
+	
+	-webkit-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	-moz-box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+	box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+h2{ margin-top:30px;}
+.text_box p{ padding-bottom:40px; width:60%; margin:0 auto; line-height:22px; }
+
+#section1 .interest{width:30%; margin:1.5%; margin-bottom:10%; margin-top:10%; /*background:#111;*/}	
+#section1 .interest img{width:70%;margin-left:15%;}
+#section3 .interest{width:28%; margin:2%; margin-bottom:7%; margin-top:2%;/*background:#111*/ }
+#section3 .interest img{width:70%;margin-left:15%; margin-bottom:10%;/*width:40%;*/}
+
+#section5 .introduction p{ text-align:justify;/*text-align:center;*/}
+#section5 .introduction{float:left ; width:78%; /*background:gray;*/}
+#section5 .skill{float:left ; width:100%; /*min-width:180px;*/}
+ul.skill_2 {padding-left:50px; margin:0 20px 20px 20px; }
+.skill_1{ margin-left:0%;}
+
+}
+
+
+/*****
+*
+*桌面版面: 769px 到最大 1232px。樣式繼承自: 行動版面和表格版面。(最大)  
+*
+*****/
+@media only screen and (min-width: 769px) {
+/*@media screen and (min-width: 769px) and (max-width: 1200px) {*/	
+
+#menu a{ letter-spacing:0.05em;/**/ }
+#menu a:hover{	
+	/*height:60px; border-bottom:2px solid;	
+	background:pink*/
+}	
+
+#section1, #section2, #section3, #section5{ padding-top:100Ppx;}
+
+		
+.mosaic-block { width:30%;/*box-shadow: 10px 10px 5px #f5931b;*/}
+.services_blurb{ width:30%; }	
+#section3 .interest a{display: block;}
+#section3 .interest img{background:#9CF; }
+#section3 .interest img:hover{background:#fff;}
+#section5 .photo{float:left ; width:20%; /*background:#fff;*/}
+#section5 .shin_ming{float:left ; width:75%;/* margin-top:3%; background:#993;*/}
+#section5 .shin_ming h2{font-size:300%;}
+#section5 .shin_ming h3{font-size:200%;}
+#section5 .introduction{float:left ; width:75%; margin-right:3%;padding:2% 0 2% 0; /*background:gray;*/}
+#section5 .skill{float:left ; width:75%; padding:2% 0 2% 0;  /*background:gray; min-width:180px;*/}
+
+a.tai_2{background:url('../images/taichung_2.jpg') no-repeat;}
+a.tai_2:hover{ background:url('../images/taichung_2_hit.jpg') no-repeat;}
+
+
+}
+
+
+
+
+
+@media only screen and (min-width: 1200px) {
+
+.content{ max-width:1280px; }
+
+}
+
+
+
+
+
+
+
